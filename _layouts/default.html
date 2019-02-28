@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>innovationManagement</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/img/favicon.png">
+    <meta name="description" content="A boutique agency focused on the development of strategy relating to brands, leadership, and innovation. We use insights to develop products, services, brands, communications, digital engagement, and organizations." />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/im.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container" id="im-header">
+      <div class="row dark-row-gradient">
+        <div class="col-sm im-header-left">
+          <a href="/">
+            <img src="/img/im-full-logo.png" class="header-logo" />
+          </a>
+        </div>
+        <div class="col-sm im-header-right">
+          <h1 id="imhere-top"><img src="/img/im-here.png" class="header-slogan" alt="iM here for you." /><br />
+          {% if page.name != 'index.html' %}
+            <a href="/" class="btn btn-primary">HOME</a>
+          {% endif %}
+          {% if page.name != 'portfolio.html' %}
+            <a href="/portfolio" class="btn btn-primary">PORTFOLIO</a>
+          {% endif %}
+          {% if page.name != 'contact.html' %}
+            <a href="/contact" class="btn btn-primary">CONTACT</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="im-header-border">
+      <div class="row light-row-gradient">
+        <div class="col"></div>
+      </div>
+    </div>
+
+    {{ content }}
+
+    <div class="container" id="im-footer">
+      <div class="row">
+        <div class="col">
+          <a href="/">innovationManagement</a>
+          <br />
+          <a href="/portfolio">Portfolio</a>
+          <br />
+          <a href="/contact">Contact</a>
+          <br />
+          <a href="/trademark">Trademark</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script async src="https://analytics.daylightdata.com/analytics/js/b4e8c2db-4e4a-48dd-8734-bb5d10e27faf"></script>
+
+  </body>
+</html>

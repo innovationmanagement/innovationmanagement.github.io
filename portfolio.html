@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="container mt-5" id="projects-listing">
+  <div class="row">
+    <div class="col">
+      <h1>innovation Management Portfolio</h1>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    {% for project in site.projects reversed %}
+      <div class="col-sm-4 project-cell">
+        <div class="project-separator light-row-gradient mt-5 mb-5"></div>
+
+        <div class="project-icon-col">
+          {% if project.icon %}
+            <img src="/img/{{project.icon}}" class="project-icon" />
+          {% endif %}
+        </div>
+        <h2>{{project.header}}:</h2>
+        <h3>{{project.subheader}}</h3>
+        <p>{{project.content | markdownify}}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
