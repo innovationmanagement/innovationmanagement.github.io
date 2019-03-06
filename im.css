@@ -213,15 +213,15 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Roboto'; }
 }
 @media (min-width: 576px) {
   #scissor {
-    max-height: 100px;
-    top: -105px;
+    max-height: 80px;
+    top: -85px;
   }
 }
 
 @media (min-width: 992px) {
   #scissor {
-    max-height: 150px;
-    top: -155px;
+    max-height: 120px;
+    top: -125px;
   }
 }
 
