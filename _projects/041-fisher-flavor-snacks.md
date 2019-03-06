@@ -1,6 +1,6 @@
 ---
 header: FISHER SNACKS
 subheader: FLAVOR INVESTIGATION
-icon: logo-thought-leadership.png
+icon: logo-fisher.png
 ---
 Snacking trends, flavor trends, and new ideas for products.
