@@ -16,7 +16,9 @@ layout: default
 
         <div class="project-icon-col">
           {% if project.icon %}
-            <img src="/img/{{project.icon}}" class="project-icon" />
+            <a href="{{project.target}}" target="_blank">
+              <img src="/img/{{project.icon}}" class="project-icon" />
+            </a>
           {% endif %}
         </div>
         <h2>{{project.header}}:</h2>
